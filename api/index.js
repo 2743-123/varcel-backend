@@ -1,14 +1,18 @@
-const express = require("express");
+// api/index.js
+const express = require('express');
 const app = express();
-require("dotenv").config();
+require('dotenv').config();
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("varcel server is on");
+// Basic route
+app.get('/', (req, res) => {
+  res.send('Hello from Express server on Vercel!');
 });
 
+// Start server
 app.listen(port, () => {
-  console.log(`server runnig on port ${port}`);
+  console.log(`Server is running on port ${port}`);
 });
+
 module.exports = app;

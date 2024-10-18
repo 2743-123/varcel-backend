@@ -6,7 +6,7 @@ require('dotenv').config();
 const port = process.env.PORT || 7000;
 
 // Basic route
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('Hello from Express server on Vercel!');
 });
 

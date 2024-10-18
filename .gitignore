@@ -14,3 +14,4 @@ logs/
 # Cache files
 .cache/
 dist/
+.vercel
